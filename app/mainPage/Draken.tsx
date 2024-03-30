@@ -33,7 +33,7 @@ const Draken = () => {
                         </p>
                     </Box>
                     <Box className="flex flex-col sm:content-between content-start">
-                        <Box className="my-10 w-full p-14 flex flex-col  hidden sm:block ">
+                        <Box className="my-10 w-full p-14  flex-col   sm:block ">
                             <Project />
                             <Skills />
                             <About />
