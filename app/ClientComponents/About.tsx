@@ -2,7 +2,6 @@
 import ScrollIntoView from 'react-scroll-into-view'
 import { useState, useContext } from 'react';
 import { UserContext } from '../page';
-import { log } from 'console';
 export default function About() {
     const [hovered, setHovered] = useState<boolean>(false);
 

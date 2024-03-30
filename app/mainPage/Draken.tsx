@@ -1,0 +1,420 @@
+import React from "react";
+import Grid from "@mui/material/Grid";
+import { Box } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import { LibraryAdd } from "@mui/icons-material";
+import news from '../assets/news.png'
+import docs from '../assets/docs.jpeg'
+import quiz from '../assets/quiz.jpeg'
+import sps from '../assets/sps.jpeg'
+import tick from '../assets/tick.jpeg'
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import Button from "@mui/material/Button";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import Image from "next/image";
+import About from "../ClientComponents/About";
+import Skills from "../ClientComponents/Skills";
+import Project from "../ClientComponents/Project";
+const Draken = () => {
+
+    return (
+        <Grid container spacing={1}>
+            <Grid item xl={6} md={6} lg={6} sm={12} className="relative">
+                <div className="static lg:fixed">
+                    <Box className="w-full md:p-14 p-4 flex flex-col items-start">
+                        <h1 className="text-white">Yashasvi Shukla</h1>
+                        <h3 className="text-white">A Web Developer with Python toppings !</h3>
+                        <p style={{ color: "#7B899D" }}>
+                            I build pixel-perfect, engaging, and accessible digital
+                            experiences.
+                        </p>
+                    </Box>
+                    <Box className="flex flex-col sm:content-between content-start">
+                        <Box className="my-10 w-full p-14 flex flex-col  hidden sm:block ">
+                            <Project />
+                            <Skills />
+                            <About />
+
+                        </Box>
+                        <Box className="my-10 w-full md:p-14 p-4  flex gap-6 ">
+                            <a href="https://github.com/YASHasvi-SHUkla">
+
+                                <GitHubIcon className="text-white cursor-pointer" />
+                            </a>
+                            <a href="www.linkedin.com/in/theyashasvishukla?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                <LinkedInIcon className="text-white cursor-pointer" />
+                            </a>
+                            <a href="https://www.goodreads.com/user/show/162721733-yashasvi-shukla">
+
+                                <MenuBookIcon className="text-white cursor-pointer" />
+                            </a>
+                            <InstagramIcon className="text-white cursor-pointer" />
+                        </Box>
+                    </Box>
+                </div>
+            </Grid>
+            <Grid
+                item
+                xl={6}
+                md={6}
+                lg={6}
+                sm={12}
+                style={{ width: "100%", padding: "0px" }}
+            >
+
+
+
+
+
+                <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
+                    Projects
+                </span>
+                <a href="https://probe-five.vercel.app/">
+                    <Box
+                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+                        id="project"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={quiz}
+                                alt="quiz"
+                                style={{ width: "100px", height: "80px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Probe App</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                        Probe is an online MCQ Test platform in which, showing one question at a time along with real time scores
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">React JS</Button>
+                                        <Button variant="outlined">JavaScript</Button>
+                                        <Button variant="outlined">Bootstrap </Button>
+                                        <Button variant="outlined">API </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+                <a href="https://github.com/YASHasvi-SHUkla/theChronicles">
+                    <Box
+                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+                        id="project"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={news}
+                                alt="news"
+                                style={{ width: "100px", height: "80px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>The Chronicles</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                        Stay informed with our React-powered news app, leveraging the News API and React Hooks for real-time updates. Explore diverse news categories seamlessly.
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">React JS</Button>
+                                        <Button variant="outlined">JavaScript</Button>
+                                        <Button variant="outlined">Bootstrap </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+                <a href="https://rochambeau-jade.vercel.app/">
+                    <Box
+                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+                        id="project"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={sps}
+                                alt="sps"
+                                style={{ width: "100px", height: "80px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Rochambeau</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                        Compete against the computer in a battle of wits and luck. With intuitive controls and engaging gameplay.
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">Development</Button>
+                                        <Button variant="outlined">JavaScript</Button>
+                                        <Button variant="outlined">HTML CSS </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+                <a href="https://docket-docs.vercel.app/">
+                    <Box
+                        className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={docs}
+                                alt="docs"
+                                style={{ width: "100px", height: "80px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Docket Docs</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                        Experience seamless note-taking with our Docs Note app, enhanced with Framer Motion (in making)
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">React JS</Button>
+                                        <Button variant="outlined">TypeScript</Button>
+                                        <Button variant="outlined">Framer Motion </Button>
+                                        <Button variant="outlined">Tailwind </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+                <a href="https://noughts-and-crosses-gilt.vercel.app/">
+                    <Box
+                        className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={tick}
+                                alt="tick"
+                                style={{ width: "100px", height: "80px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Noughts and Crosses</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                        Implemented a classic online Tic Tac Toe, in this JavaScript game.
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">Development</Button>
+                                        <Button variant="outlined">Javascript</Button>
+                                        <Button variant="outlined">HTML CSS </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+
+
+
+
+
+
+
+
+
+                <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
+                    Skills
+                </span>
+                <a href="https://github.com/YASHasvi-SHUkla?tab=repositories">
+                    <Box
+                        className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
+                        id="exp"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                                width: "100%",
+                            },
+
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <p className="w-100 whitespace-nowrap">2019-2024</p>
+
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Student Graduate Fresher. Developer</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                    <br></br>
+                                    <br></br>
+                                </div>
+
+                                <div>Languages
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">HTML CSS</Button>
+                                        <Button variant="outlined">JavaScript</Button>
+                                        <Button variant="outlined">Python </Button>
+                                        <Button variant="outlined">TypeScript</Button>
+                                    </div>
+                                </div>
+                                <div>Web Technologies
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">React JS</Button>
+                                        <Button variant="outlined">Bootstrap</Button>
+                                        <Button variant="outlined">Git</Button>
+                                        <Button variant="outlined">Redux</Button>
+                                        <Button variant="outlined">Tailwind css</Button>
+                                    </div>
+                                </div>
+                                <div>Other
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">Windows</Button>
+                                        <Button variant="outlined">VS Code</Button>
+                                        <Button variant="outlined">Commamnd Line Tools </Button>
+                                        <Button variant="outlined">SQL</Button>
+                                        <Button variant="outlined">PyCharm</Button>
+                                        <Button variant="outlined">Linux</Button>
+                                        <Button variant="outlined">Github</Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+
+                <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
+                    About
+                </span>
+                <Box
+                    className="w-full md:p-14 p-4 flex flex-col items-start "
+                    id="about"
+                >
+                    <p style={{ color: "#7B899D" }} className="p-2">
+                        I completed my schooling from Lucknow then did my graduation.
+                        Have interest in programming and developing
+                    </p>
+                    <p style={{ color: "#7B899D" }} className="p-2">
+                        My Enginerring made me forget everything. So now i am a Frontend
+                        Developer who create large Scalable apps on React and Next JS with
+                        Typescript and Javascript
+                    </p>
+                    <p style={{ color: "#7B899D" }} className="p-2">
+                        In my free time I like to play chess and read books. Currently a beginner in French language
+                    </p>
+                </Box>
+
+
+                <a href="/Yashasvi_Shukla_Resume.pdf">
+                    <Box className="w-full md:p-14 p-6 flex gap-2 mb-4">
+                        <p className="font-bold text-white cursor-pointer">
+                            View Full Resume
+                        </p>
+                        <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                    </Box>
+                </a>
+
+                <p
+                    className="w-full p-14 md:text-base text-sm"
+                    style={{ color: "#7B899D" }}
+                >
+                    Made on Visual Studio, Built with Next js and Tailwind, Deployed with
+                    Netlify
+                </p>
+            </Grid>
+        </Grid>
+    );
+};
+export default Draken;
