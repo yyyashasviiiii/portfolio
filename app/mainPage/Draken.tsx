@@ -11,6 +11,8 @@ import docs from '../assets/docs.jpeg'
 import quiz from '../assets/quiz.jpeg'
 import sps from '../assets/sps.jpeg'
 import tick from '../assets/tick.jpeg'
+import food from '../assets/food.jpeg'
+import gemini from '../assets/gemini.jpeg'
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import Button from "@mui/material/Button";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
@@ -39,7 +41,7 @@ const Draken = () => {
                             <About />
 
                         </Box>
-                        <Box className="my-10 w-full md:p-14 p-4  flex gap-6 ">
+                        <Box className="my-30 w-full md:p-14 p-4 flex gap-6 ">
                             <a href="https://github.com/YASHasvi-SHUkla">
 
                                 <GitHubIcon className="text-white cursor-pointer" />
@@ -66,12 +68,106 @@ const Draken = () => {
             >
 
 
-
-
-
                 <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
                     Projects
                 </span>
+
+                <a href="https://nom-nom-nomad.vercel.app/">
+                    <Box
+                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+                        id="project"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={food}
+                                alt="food"
+                                style={{ width: "100px", height: "80px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Nom Nom Nomad</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                        Choose from a diverse menu featuring a delectable array of dishes. One delicious meal at a time
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">React JS</Button>
+                                        <Button variant="outlined">JavaScript</Button>
+                                        <Button variant="outlined">Bootstrap </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+
+
+                <a href="https://gemini-clone-taupe.vercel.app/">
+                    <Box
+                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+                        id="project"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={gemini}
+                                alt="gemini"
+                                style={{ width: "100px", height: "80px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Gemini Clone</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                        A sleek, fast, and customizable Gemini protocol client crafted with React and Vite.
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">React JS</Button>
+                                        <Button variant="outlined">JavaScript</Button>
+                                        <Button variant="outlined">Bootstrap </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+
+
+
+
                 <a href="https://probe-five.vercel.app/">
                     <Box
                         className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
