@@ -138,7 +138,7 @@ const Draken = () => {
                                 </div>
                                 <div>
                                     <p className="mb-4">
-                                        Ask away your questions and don't leave until satisfied. A sleek, fast, and customizable Gemini protocol client crafted with React and Vite.
+                                        Ask away your questions and do not leave until satisfied. A sleek, fast, and customizable Gemini protocol client crafted with React and Vite.
                                     </p>
                                     <div className="flex gap-2 p-1 my-3 flex-wrap">
                                         <Button variant="outlined">React JS</Button>
