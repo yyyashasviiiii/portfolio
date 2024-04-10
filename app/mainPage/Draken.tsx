@@ -4,8 +4,6 @@ import { Box } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-import { LibraryAdd } from "@mui/icons-material";
 import news from '../assets/news.png'
 import docs from '../assets/docs.jpeg'
 import quiz from '../assets/quiz.jpeg'
@@ -28,6 +26,7 @@ const Draken = () => {
                 <div className="static lg:fixed">
                     <Box className="w-full md:p-14 p-4 flex flex-col items-start">
                         <h1 className="text-white">Yashasvi Shukla</h1>
+                        <br></br>
                         <h3 className="text-white">A Web Developer with Python toppings !</h3>
                         <p style={{ color: "#7B899D" }}>
                             I build pixel-perfect, engaging, and accessible digital
@@ -41,20 +40,7 @@ const Draken = () => {
                             <About />
 
                         </Box>
-                        <Box className="my-30 w-full md:p-14 p-4 flex gap-6 ">
-                            <a href="https://github.com/YASHasvi-SHUkla">
 
-                                <GitHubIcon className="text-white cursor-pointer" />
-                            </a>
-                            <a href="www.linkedin.com/in/theyashasvishukla?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                                <LinkedInIcon className="text-white cursor-pointer" />
-                            </a>
-                            <a href="https://www.goodreads.com/user/show/162721733-yashasvi-shukla">
-
-                                <MenuBookIcon className="text-white cursor-pointer" />
-                            </a>
-                            <InstagramIcon className="text-white cursor-pointer" />
-                        </Box>
                     </Box>
                 </div>
             </Grid>
@@ -96,7 +82,7 @@ const Draken = () => {
                             <Image
                                 src={food}
                                 alt="food"
-                                style={{ width: "100px", height: "80px" }}
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
                             />
                             <Box>
                                 <div className="flex text-white font-bold mb-2 gap-2">
@@ -105,12 +91,12 @@ const Draken = () => {
                                 </div>
                                 <div>
                                     <p className="mb-4">
-                                        Choose from a diverse menu featuring a delectable array of dishes. One delicious meal at a time
+                                        Indulge effortlessly with our React-based food delivery app crafted with Vite. Seamlessly navigate through login, signup, payment features and cart system.
                                     </p>
                                     <div className="flex gap-2 p-1 my-3 flex-wrap">
                                         <Button variant="outlined">React JS</Button>
                                         <Button variant="outlined">JavaScript</Button>
-                                        <Button variant="outlined">Bootstrap </Button>
+                                        <Button variant="outlined">Hooks </Button>
                                     </div>
                                 </div>
                             </Box>
@@ -143,7 +129,7 @@ const Draken = () => {
                             <Image
                                 src={gemini}
                                 alt="gemini"
-                                style={{ width: "100px", height: "80px" }}
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
                             />
                             <Box>
                                 <div className="flex text-white font-bold mb-2 gap-2">
@@ -152,7 +138,7 @@ const Draken = () => {
                                 </div>
                                 <div>
                                     <p className="mb-4">
-                                        A sleek, fast, and customizable Gemini protocol client crafted with React and Vite.
+                                        Ask away your questions and don't leave until satisfied. A sleek, fast, and customizable Gemini protocol client crafted with React and Vite.
                                     </p>
                                     <div className="flex gap-2 p-1 my-3 flex-wrap">
                                         <Button variant="outlined">React JS</Button>
@@ -165,8 +151,51 @@ const Draken = () => {
                     </Box>
                 </a>
 
-
-
+                <a href="https://github.com/YASHasvi-SHUkla/theChronicles">
+                    <Box
+                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+                        id="project"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={news}
+                                alt="news"
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>The Chronicles</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                        Stay informed with our React-powered news app, leveraging the News API and React Hooks for real-time updates. Explore diverse news categories seamlessly.
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">React JS</Button>
+                                        <Button variant="outlined">JavaScript</Button>
+                                        <Button variant="outlined">Bootstrap </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
 
                 <a href="https://probe-five.vercel.app/">
                     <Box
@@ -192,7 +221,7 @@ const Draken = () => {
                             <Image
                                 src={quiz}
                                 alt="quiz"
-                                style={{ width: "100px", height: "80px" }}
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
                             />
                             <Box>
                                 <div className="flex text-white font-bold mb-2 gap-2">
@@ -201,7 +230,7 @@ const Draken = () => {
                                 </div>
                                 <div>
                                     <p className="mb-4">
-                                        Probe is an online MCQ Test platform in which, showing one question at a time along with real time scores
+                                        Probe is an online MCQ Test platform in which, showing one question at a time in front of the user. Including features like question navigation and real time scores.
                                     </p>
                                     <div className="flex gap-2 p-1 my-3 flex-wrap">
                                         <Button variant="outlined">React JS</Button>
@@ -214,51 +243,7 @@ const Draken = () => {
                         </Box>
                     </Box>
                 </a>
-                <a href="https://github.com/YASHasvi-SHUkla/theChronicles">
-                    <Box
-                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
-                        id="project"
-                        sx={{
-                            "&:hover": {
-                                boxShadow:
-                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
-                                backgroundColor: "rgba(255, 255, 255, 0.008)",
-                            },
-                        }}
-                    >
-                        <Box
-                            className="flex gap-3 text-white"
-                            sx={{
-                                "@media(max-width:600px)": {
-                                    display: "flex",
-                                    flexDirection: "column",
-                                },
-                            }}
-                        >
-                            <Image
-                                src={news}
-                                alt="news"
-                                style={{ width: "100px", height: "80px" }}
-                            />
-                            <Box>
-                                <div className="flex text-white font-bold mb-2 gap-2">
-                                    <p>The Chronicles</p>
-                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
-                                </div>
-                                <div>
-                                    <p className="mb-4">
-                                        Stay informed with our React-powered news app, leveraging the News API and React Hooks for real-time updates. Explore diverse news categories seamlessly.
-                                    </p>
-                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
-                                        <Button variant="outlined">React JS</Button>
-                                        <Button variant="outlined">JavaScript</Button>
-                                        <Button variant="outlined">Bootstrap </Button>
-                                    </div>
-                                </div>
-                            </Box>
-                        </Box>
-                    </Box>
-                </a>
+
                 <a href="https://rochambeau-jade.vercel.app/">
                     <Box
                         className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
@@ -283,7 +268,7 @@ const Draken = () => {
                             <Image
                                 src={sps}
                                 alt="sps"
-                                style={{ width: "100px", height: "80px" }}
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
                             />
                             <Box>
                                 <div className="flex text-white font-bold mb-2 gap-2">
@@ -327,7 +312,7 @@ const Draken = () => {
                             <Image
                                 src={docs}
                                 alt="docs"
-                                style={{ width: "100px", height: "80px" }}
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
                             />
                             <Box>
                                 <div className="flex text-white font-bold mb-2 gap-2">
@@ -372,7 +357,7 @@ const Draken = () => {
                             <Image
                                 src={tick}
                                 alt="tick"
-                                style={{ width: "100px", height: "80px" }}
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
                             />
                             <Box>
                                 <div className="flex text-white font-bold mb-2 gap-2">
@@ -381,7 +366,7 @@ const Draken = () => {
                                 </div>
                                 <div>
                                     <p className="mb-4">
-                                        Implemented a classic online Tic Tac Toe, in this JavaScript game.
+                                        Implemented a classic online Tic Tac Toe game using merely JavaScript.
                                     </p>
                                     <div className="flex gap-2 p-1 my-3 flex-wrap">
                                         <Button variant="outlined">Development</Button>
@@ -393,14 +378,6 @@ const Draken = () => {
                         </Box>
                     </Box>
                 </a>
-
-
-
-
-
-
-
-
 
                 <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
                     Skills
@@ -480,20 +457,20 @@ const Draken = () => {
                 >
                     <p style={{ color: "#7B899D" }} className="p-2">
                         I completed my schooling from Lucknow then did my graduation.
-                        Have interest in programming and developing
+                        Have interest in programming, developing and problem solving.
                     </p>
                     <p style={{ color: "#7B899D" }} className="p-2">
-                        My Enginerring made me forget everything. So now i am a Frontend
-                        Developer who create large Scalable apps on React and Next JS with
-                        Typescript and Javascript
+                        My Engineering made me forget everything. So now i am a Frontend
+                        Developer who create large Scalable apps on React JS with
+                        Typescript and Javascript along with CSS frameworks.
                     </p>
                     <p style={{ color: "#7B899D" }} className="p-2">
-                        In my free time I like to play chess and read books. Currently a beginner in French language
+                        I play basketball. I like to play chess and read books. Currently a beginner in French language !
                     </p>
                 </Box>
 
 
-                <a href="/Yashasvi_Shukla_Resume.pdf">
+                <a href="/Yashasvi_Shukla_Resume.pdf" target="_blank">
                     <Box className="w-full md:p-14 p-6 flex gap-2 mb-4">
                         <p className="font-bold text-white cursor-pointer">
                             View Full Resume
@@ -502,12 +479,27 @@ const Draken = () => {
                     </Box>
                 </a>
 
+                <Box className="my-30 w-full md:p-14 p-4 flex gap-6 ">
+                    <a href="https://github.com/YASHasvi-SHUkla" target="_blank">
+                        <GitHubIcon className="text-white cursor-pointer" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/yashasvi-shukla-4b09041a8/" target="_blank">
+                        <LinkedInIcon className="text-white cursor-pointer" />
+                    </a>
+                    <a href="https://www.goodreads.com/user/show/162721733-yashasvi-shukla" target="_blank">
+
+                        <MenuBookIcon className="text-white cursor-pointer" />
+                    </a>
+                    <a href="https://www.instagram.com/yyyashasviiiii/" target="_blank">
+                        <InstagramIcon className="text-white cursor-pointer" />
+                    </a>
+
+                </Box>
+
                 <p
                     className="w-full p-14 md:text-base text-sm"
-                    style={{ color: "#7B899D" }}
-                >
-                    Made on Visual Studio, Built with Next js and Tailwind, Deployed with
-                    Netlify
+                    style={{ color: "#7B899D" }}>
+                    Made on Visual Studio. Deployed with Netlify
                 </p>
             </Grid>
         </Grid>
