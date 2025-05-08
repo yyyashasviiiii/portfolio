@@ -28,7 +28,7 @@ const Draken = () => {
                     <Box className="w-full md:p-14 p-4 flex flex-col items-start">
                         <h1 className="text-white">Yashasvi Shukla</h1>
                         <br></br>
-                        <h3 className="text-white">A Web Developer with Python toppings !</h3>
+                        <h3 className="text-white">A Web Developer with DSA toppings !</h3>
                         <p style={{ color: "#7B899D" }}>
                             I build pixel-perfect, engaging, and accessible digital
                             experiences.
@@ -145,6 +145,52 @@ const Draken = () => {
                                         <Button variant="outlined">React JS</Button>
                                         <Button variant="outlined">JavaScript</Button>
                                         <Button variant="outlined">Bootstrap </Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+
+                <a href="https://kanbanix.vercel.app/">
+                    <Box
+                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+                        id="project"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={todo}
+                                alt="todo"
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Kanbanix</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                    It is a Kanban board with a Matrix-style background, offering intuitive drag-and-drop, editing and deleting task management in a terminal-like interface.
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">HTML5</Button>
+                                        <Button variant="outlined">CSS3</Button>
+                                        <Button variant="outlined">JavaScript (ES6)</Button>
                                     </div>
                                 </div>
                             </Box>
@@ -291,51 +337,7 @@ const Draken = () => {
                     </Box>
                 </a>
 
-                <a href="https://kanbanix.vercel.app/">
-                    <Box
-                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
-                        id="project"
-                        sx={{
-                            "&:hover": {
-                                boxShadow:
-                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
-                                backgroundColor: "rgba(255, 255, 255, 0.008)",
-                            },
-                        }}
-                    >
-                        <Box
-                            className="flex gap-3 text-white"
-                            sx={{
-                                "@media(max-width:600px)": {
-                                    display: "flex",
-                                    flexDirection: "column",
-                                },
-                            }}
-                        >
-                            <Image
-                                src={todo}
-                                alt="todo"
-                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
-                            />
-                            <Box>
-                                <div className="flex text-white font-bold mb-2 gap-2">
-                                    <p>Kanbanix</p>
-                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
-                                </div>
-                                <div>
-                                    <p className="mb-4">
-                                    It's a Kanban board with a Matrix-style background, offering intuitive drag-and-drop, editing and deleting task management in a terminal-like interface.
-                                    </p>
-                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
-                                        <Button variant="outlined">HTML5</Button>
-                                        <Button variant="outlined">CSS3</Button>
-                                        <Button variant="outlined">JavaScript (ES6)</Button>
-                                    </div>
-                                </div>
-                            </Box>
-                        </Box>
-                    </Box>
-                </a>
+                
 
                 <a href="https://docket-docs.vercel.app/">
                     <Box
@@ -453,11 +455,12 @@ const Draken = () => {
                                 },
                             }}
                         >
-                            <p className="w-100 whitespace-nowrap">2019-2024</p>
+                            <p className="w-100 whitespace-nowrap">2019-2026</p>
 
                             <Box>
+
                                 <div className="flex text-white font-bold mb-2 gap-2">
-                                    <p>Student Graduate Fresher. Developer</p>
+                                    <p>Post Grad, Grad. Developer</p>
                                     <ArrowOutwardIcon sx={{ color: "#fff" }} />
                                     <br></br>
                                     <br></br>
@@ -465,7 +468,7 @@ const Draken = () => {
 
                                 <div>Languages
                                     <div className="flex gap-2 p-1 my-3 flex-wrap">
-                                        <Button variant="outlined">HTML CSS</Button>
+                                        <Button variant="outlined">C++</Button>
                                         <Button variant="outlined">JavaScript</Button>
                                         <Button variant="outlined">Python </Button>
                                         <Button variant="outlined">TypeScript</Button>
@@ -476,7 +479,7 @@ const Draken = () => {
                                         <Button variant="outlined">React JS</Button>
                                         <Button variant="outlined">Bootstrap</Button>
                                         <Button variant="outlined">Git</Button>
-                                        <Button variant="outlined">Redux</Button>
+                                        <Button variant="outlined">Node JS</Button>
                                         <Button variant="outlined">Tailwind css</Button>
                                     </div>
                                 </div>
@@ -486,7 +489,7 @@ const Draken = () => {
                                         <Button variant="outlined">VS Code</Button>
                                         <Button variant="outlined">Commamnd Line Tools </Button>
                                         <Button variant="outlined">SQL</Button>
-                                        <Button variant="outlined">PyCharm</Button>
+                                        <Button variant="outlined">Postman</Button>
                                         <Button variant="outlined">Linux</Button>
                                         <Button variant="outlined">Github</Button>
                                     </div>
@@ -504,11 +507,11 @@ const Draken = () => {
                     id="about"
                 >
                     <p style={{ color: "#7B899D" }} className="p-2">
-                        I completed my schooling from Lucknow then did my graduation.
+                        I completed my schooling from Lucknow then did my graduation and currently pursuing my masters
                         Have interest in programming, developing and problem solving.
                     </p>
                     <p style={{ color: "#7B899D" }} className="p-2">
-                        My Engineering made me forget everything. So now i am a Frontend
+                        My Engineering made me forget everything. So now i am a Full Stack
                         Developer who create large Scalable apps on React JS with
                         Typescript and Javascript along with CSS frameworks.
                     </p>
@@ -528,10 +531,10 @@ const Draken = () => {
                 </a>
 
                 <Box className="my-30 w-full md:p-14 p-4 flex gap-6 ">
-                    <a href="https://github.com/YASHasvi-SHUkla" target="_blank">
+                    <a href="https://github.com/yyyashasviiiii" target="_blank">
                         <GitHubIcon className="text-white cursor-pointer" />
                     </a>
-                    <a href="https://www.linkedin.com/in/yashasvi-shukla-4b09041a8/" target="_blank">
+                    <a href="https://www.linkedin.com/in/theyashasvishukla/" target="_blank">
                         <LinkedInIcon className="text-white cursor-pointer" />
                     </a>
                     <a href="https://www.goodreads.com/user/show/162721733-yashasvi-shukla" target="_blank">
