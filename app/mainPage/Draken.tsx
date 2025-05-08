@@ -11,6 +11,7 @@ import sps from '../assets/sps.jpeg'
 import tick from '../assets/tick.jpeg'
 import food from '../assets/food.jpeg'
 import gemini from '../assets/gemini.jpeg'
+import todo from '../assets/todo.png'
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import Button from "@mui/material/Button";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
@@ -289,6 +290,53 @@ const Draken = () => {
                         </Box>
                     </Box>
                 </a>
+
+                <a href="https://kanbanix.vercel.app/">
+                    <Box
+                        className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+                        id="project"
+                        sx={{
+                            "&:hover": {
+                                boxShadow:
+                                    "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                                backgroundColor: "rgba(255, 255, 255, 0.008)",
+                            },
+                        }}
+                    >
+                        <Box
+                            className="flex gap-3 text-white"
+                            sx={{
+                                "@media(max-width:600px)": {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                },
+                            }}
+                        >
+                            <Image
+                                src={todo}
+                                alt="todo"
+                                style={{ width: "180px", height: "100px", paddingRight: "30px" }}
+                            />
+                            <Box>
+                                <div className="flex text-white font-bold mb-2 gap-2">
+                                    <p>Kanbanix</p>
+                                    <ArrowOutwardIcon sx={{ color: "#fff" }} />
+                                </div>
+                                <div>
+                                    <p className="mb-4">
+                                    It's a Kanban board with a Matrix-style background, offering intuitive drag-and-drop, editing and deleting task management in a terminal-like interface.
+                                    </p>
+                                    <div className="flex gap-2 p-1 my-3 flex-wrap">
+                                        <Button variant="outlined">HTML5</Button>
+                                        <Button variant="outlined">CSS3</Button>
+                                        <Button variant="outlined">JavaScript (ES6)</Button>
+                                    </div>
+                                </div>
+                            </Box>
+                        </Box>
+                    </Box>
+                </a>
+
                 <a href="https://docket-docs.vercel.app/">
                     <Box
                         className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
