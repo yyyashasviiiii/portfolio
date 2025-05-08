@@ -432,7 +432,7 @@ const Draken = () => {
                 <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
                     Skills
                 </span>
-                <a href="https://github.com/YASHasvi-SHUkla?tab=repositories">
+                <a href="https://github.com/yyyashasviiiii?tab=repositories">
                     <Box
                         className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
                         id="exp"
