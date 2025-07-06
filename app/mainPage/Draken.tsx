@@ -521,7 +521,7 @@ const Draken = () => {
                 </Box>
 
 
-                <a href="/Yashasvi_Shukla_Resume.pdf" target="_blank">
+                <a href="/Yashasvi_Shukla.pdf" target="_blank">
                     <Box className="w-full md:p-14 p-6 flex gap-2 mb-4">
                         <p className="font-bold text-white cursor-pointer">
                             View Full Resume
